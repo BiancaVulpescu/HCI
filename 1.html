@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>OSC-AR: A Mixed-Reality Platform for Oscar Film Critique</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p[role="doc-subtitle"] {
+      font-size: 1.2rem; color: #666; margin-top: 0; font-style: italic;
+    }
+    p[role="doc-abstract"] i {
+      display: block; font-style: italic; background: #f9f9f9;
+      padding: 0.75rem; border-left: 4px solid #ccc; margin: 1rem 0;
+    }
+    figure img {
+  width: 1000px;
+  height: auto;
+  object-fit: contain;
+}
+
+    section { margin: 2rem 0; }
+    figure { text-align: center; margin: 1.5rem 0; }
+    figcaption { font-size: 0.9rem; color: #555; }
+    section[typeof="sa:Personas"] section {
+      border: 1px solid #ddd; border-radius: 8px;
+      padding: 1rem; margin: 1rem 0; background: #fafafa;
+    }
+    dl dt { font-weight: bold; }
+    dl dd { margin: 0 0 0.5rem 1rem; }
+  </style>
+</head>
+<body>
+  <article resource="#" typeof="schema:ScholarlyArticle">
+
+    <header>
+      <h1 property="schema:name">OSC-AR: A Mixed-Reality Platform for Oscar Film Critique</h1>
+      <p role="doc-subtitle" property="schema:alternateName">
+        Enhancing Film Evaluation with MR and Mobile Collaboration
+      </p>
+    </header>
+
+    <div role="contentinfo">
+      <section typeof="sa:Abstract">
+        <h2>Abstract</h2>
+        <p role="doc-abstract">
+          <i>
+            OSC-AR integrates a mixed-reality (MR) headset with a companion mobile application to streamline the film
+            critique process for Oscar jurors. By providing subtle, context-sensitive overlays during screenings and
+            a structured collaboration environment post-screening, OSC-AR enables thorough evaluation, organized note-taking,
+            and asynchronous discussion among geographically distributed critics.
+          </i>
+        </p>
+      </section>
+      <section>
+        <h2>Copyright &amp; License</h2>
+        <p>
+          &copy; <span property="schema:copyrightYear">2025</span>
+          <span property="schema:copyrightHolder">CinemaTech Inc.</span>.
+          <a property="schema:license" href="https://creativecommons.org/licenses/by/4.0/" typeof="CreativeWork">
+            CC-BY 4.0
+          </a>
+        </p>
+      </section>
+    </div>
+
+    <section>
+      <h2>Introduction</h2>
+      <p>
+        Judging films for the Academy Awards requires deep artistic analysis, real-time insights, and
+        collaborative deliberation. Traditional note-taking disrupts immersion, and scattered feedback
+        hampers post-screening discussions. OSC-AR addresses these challenges by combining MR overlays
+        with a robust mobile app for synchronized reviews and structured dialogue.
+      </p>
+    </section>
+
+    <section>
+      <h2>System Overview</h2>
+      <p>
+        The OSC-AR system consists of two primary components: an MR headset that delivers non-intrusive,
+        scene-relevant annotations, and a mobile application that organizes notes, scores films using
+        AI-assisted sentiment analysis, and facilitates asynchronous jury discussions.
+      </p>
+      
+    </section>
+
+    <section>
+      <h2>Interface Previews</h2>
+      <figure typeof="sa:image">
+  <img src="VR1.png" alt="VR headset startup menu"/>
+  <img src="VR2.png" alt="OSC-AR MR headset main menu with Movie List, Jury Chat, Notifications"/>
+  <figcaption property="schema:caption">
+    Figure 2: Two views of the OSC-AR MR headset main menu options.
+  </figcaption>
+</figure>
+
+      
+      <figure typeof="sa:image">
+        <img src="Mobile_photo.png" alt="OSC-AR mobile app screens: start, home, chat, notifications, nominees" />
+        <figcaption property="schema:caption">
+          Figure 3: OSC-AR mobile app screens for start, home menu, jury chat, notifications, and movie nominees.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section typeof="sa:Personas">
+      <h2>User Personas</h2>
+
+      <section id="persona-olivia" typeof="schema:Person" resource="#olivia-carter">
+        <h3 property="schema:name">Olivia Carter</h3>
+        <dl>
+          <dt>Date of Birth</dt>
+          <dd><time property="schema:birthDate" datetime="1983-09-08">September 8, 1983</time></dd>
+          <dt property="schema:gender">Gender</dt>
+          <dd><span property="schema:gender">Female</span></dd>
+          <dt>Location</dt>
+          <dd>
+            <span typeof="schema:Place" property="schema:address">
+              <span property="schema:addressLocality">New York City</span>,
+              <span property="schema:addressRegion">NY</span>,
+              <span property="schema:addressCountry">USA</span>
+            </span>
+          </dd>
+          <dt property="schema:jobTitle">Workplace &amp; Role</dt>
+          <dd>
+            <span property="schema:worksFor" typeof="schema:Organization">
+              <span property="schema:name">CineScope Magazine</span>
+            </span>, Senior Film Critic &amp; Oscar Jury Member
+          </dd>
+          <dt property="schema:alumniOf" typeof="schema:EducationalOrganization">Alma Mater</dt>
+          <dd><span property="schema:name">University of Southern California</span> (M.A. Film Studies)</dd>
+        </dl>
+        <p><i>
+          Olivia aims for a seamless review workflow, leveraging MR for in-screen insights and the mobile app
+          for organized note-taking and structured discussions without breaking immersion.
+        </i></p>
+      </section>
+
+      <section id="persona-marcus" typeof="schema:Person" resource="#marcus-dupont">
+        <h3 property="schema:name">Marcus DuPont</h3>
+        <dl>
+          <dt>Date of Birth</dt>
+          <dd><time property="schema:birthDate" datetime="1975-03-14">March 14, 1975</time></dd>
+          <dt property="schema:gender">Gender</dt>
+          <dd><span property="schema:gender">Male</span></dd>
+          <dt>Location</dt>
+          <dd>
+            <span typeof="schema:Place" property="schema:address">
+              <span property="schema:addressLocality">Paris</span>,
+              <span property="schema:addressCountry">France</span>
+            </span>
+          </dd>
+          <dt property="schema:jobTitle">Role</dt>
+          <dd>International Film Critic &amp; Cannes Selection Committee Member</dd>
+          <dt property="schema:alumniOf" typeof="schema:EducationalOrganization">Alma Mater</dt>
+          <dd><span property="schema:name">La Fémis</span> (M.A. Screenwriting &amp; Film Theory)</dd>
+        </dl>
+        <p><i>
+          Marcus emphasizes minimalist MR overlays for auteur insights and uses the app’s tagging and
+          multilingual support to organize nuanced thematic analyses across global cinema.
+        </i></p>
+      </section>
+
+      <section id="persona-tony" typeof="schema:Person" resource="#tony-rayns">
+        <h3 property="schema:name">Tony Rayns</h3>
+        <dl>
+          <dt>Date of Birth</dt>
+          <dd><time property="schema:birthDate" datetime="1948-01-01">1948</time></dd>
+          <dt property="schema:gender">Gender</dt>
+          <dd><span property="schema:gender">Male</span></dd>
+          <dt>Location</dt>
+          <dd>
+            <span typeof="schema:Place" property="schema:address">
+              <span property="schema:addressLocality">London</span>,
+              <span property="schema:addressCountry">United Kingdom</span>
+            </span>
+          </dd>
+          <dt property="schema:jobTitle">Role</dt>
+          <dd>Independent Critic &amp; Festival Programmer</dd>
+          <dt property="schema:alumniOf" typeof="schema:EducationalOrganization">Alma Mater</dt>
+          <dd><span property="schema:name">University of Sussex</span> (Literature &amp; Film Studies)</dd>
+        </dl>
+        <p><i>
+          Tony configures targeted MR filters for regional and historical context, compiling citation-ready
+          notes in the app for deep archival and scholarly use.
+        </i></p>
+      </section>
+    </section>
+
+    <section typeof="sa:DevelopmentPrompts">
+  <h2>Development Prompts</h2>
+  <ul>
+    <li>
+      <a href="https://chatgpt.com/share/682ee378-5a2c-8010-916d-61ce5b019701">
+        Prompt: Generate Scholarly HTML article outline
+      </a>
+    </li>
+    <li>
+      <a href="https://chatgpt.com/share/682ee3c6-6760-8010-b1fd-eae6c5265125">
+        Prompt: Embed CSS styling and images
+      </a>
+    </li>
+    <li>
+      <a href="https://chatgpt.com/share/682ee4ed-2c30-8010-a2bd-779b72610539">
+        Prompt: Adjust image dimensions uniformly
+      </a>
+    </li>
+  </ul>
+</section>
+
+<section typeof="sa:Methodology">
+  <h2>Methodology</h2>
+
+  <section typeof="sa:LiteratureReview">
+    <h3>Literature Review</h3>
+    <p>
+      We conducted a comprehensive review of existing mixed-reality and film-critique platforms,
+      examining peer-reviewed articles, industry white papers, and developer documentation
+      to identify best practices for real-time annotation, note-taking workflows, and collaborative
+      review interfaces.
+    </p>
+  </section>
+
+ <section typeof="sa:Survey">
+  <h2>Survey</h2>
+  <p>An online survey was distributed to 57 professional film critics and jurors to assess:</p>
+  <ul>
+    <li>Current pain points in film review workflows</li>
+    <li>Preferred features in MR and mobile tools</li>
+    <li>Frequency of note-taking interruptions during screenings</li>
+  </ul>
+  <p>Responses were analyzed to inform OSC-AR’s design priorities and feature set.</p>
+</section>
+
+</section>
+<section typeof="sa:Results">
+  <h2>Results</h2>
+  <p>The online survey (n=57) of professional film critics and jurors yielded the following distributions:</p>
+
+  <h3>How often do you take notes during a film screening?</h3>
+  <ul>
+    <li><strong>Never (0%)</strong>: 17.5%</li>
+    <li><strong>Very rarely (≤25%)</strong>: 26.3%</li>
+    <li><strong>Occasionally (26–50%)</strong>: 26.3%</li>
+    <li><strong>Frequently (51–75%)</strong>: 14.0%</li>
+    <li><strong>Always (>75%)</strong>: 15.8%</li>
+  </ul>
+
+  <h3>How useful do you find an MR interface that shows your notes and live statistics without distracting you?</h3>
+  <ul>
+    <li><strong>Never useful</strong>: 19.3%</li>
+    <li><strong>Rarely useful</strong>: 17.5%</li>
+    <li><strong>Sometimes useful</strong>: 22.8%</li>
+    <li><strong>Very useful</strong>: 15.8%</li>
+    <li><strong>Essential</strong>: 24.6%</li>
+  </ul>
+
+  <h3>How disruptive do you find interrupting the screening to take notes?</h3>
+  <ul>
+    <li><strong>Not at all disruptive</strong>: 24.6%</li>
+    <li><strong>Slightly disruptive</strong>: 12.3%</li>
+    <li><strong>Moderately disruptive</strong>: 26.3%</li>
+    <li><strong>Very disruptive</strong>: 12.3%</li>
+    <li><strong>Extremely disruptive</strong>: 24.6%</li>
+  </ul>
+</section>
+
+
+    <section role="doc-bibliography" typeof="schema:CreativeWork">
+      <h2>References</h2>
+      <ol>
+        <li typeof="schema:WebPage" role="doc-biblioentry" property="schema:citation" resource="https://cinema.example/osc-ar">
+          <cite property="schema:name"><a href="https://cinema.example/osc-ar">OSC-AR Official Documentation</a></cite>,
+          CinemaTech Inc.; published in <time property="schema:datePublished" datetime="2025">2025</time>.
+        </li>
+      </ol>
+    </section>
+
+  </article>
+</body>
+</html>
